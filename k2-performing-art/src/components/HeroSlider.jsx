@@ -26,7 +26,7 @@ const slides = [
 
 function HeroSlider() {
   return (
-    <section className="hero">
+    <section id="top" className="hero">
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         autoplay={{ delay: 3500 }}

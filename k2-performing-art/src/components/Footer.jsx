@@ -1,37 +1,61 @@
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, MapPin, Phone } from "lucide-react";
 
 function Footer() {
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "91XXXXXXXXXX";
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    "Hello K2 Performing Art Academy, I want to know about admission."
+  )}`;
+
   return (
-    <footer id="contact" className="footer">
-      <h2>K2 Performing Art Academy</h2>
-      <p>Discipline • Confidence • Creativity • Performance</p>
+    <footer className="footer">
+      <div className="footer-grid">
+        <div>
+          <h2>K2 Performing Art Academy</h2>
+          <p>
+            Building discipline, confidence, creativity and performance through
+            dance, karate and performing arts.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#about-us">About Us</a>
+          <a href="#course">Courses</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#candidate-form">Candidate Form</a>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <p className="footer-contact">
+            <MapPin /> Add academy address here
+          </p>
+          <p className="footer-contact">
+            <Phone /> +91 XXXXX XXXXX
+          </p>
+        </div>
+      </div>
 
       <div className="social-links">
-        <a
-          href="https://www.instagram.com/k2academy/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit K2 Academy on Instagram"
-        >
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="5" />
-            <circle cx="12" cy="12" r="4" />
-            <circle cx="17.5" cy="6.5" r="1" className="social-icon-dot" />
-          </svg>
+        <a href="#" aria-label="Instagram" className="social-text">
+          IG
         </a>
 
-        <a href="#" aria-label="Facebook" className="facebook-text">
+        <a href="#" aria-label="Facebook" className="social-text">
           f
         </a>
 
-        <a href="#" aria-label="YouTube">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-            <path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8Z" />
-            <path d="m10 15.5 5-3.5-5-3.5v7Z" fill="currentColor" stroke="none" />
-          </svg>
+        <a href="#" aria-label="YouTube" className="social-text">
+          ▶
         </a>
 
-        <a href="#" aria-label="WhatsApp">
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="WhatsApp"
+        >
           <MessageCircle />
         </a>
       </div>

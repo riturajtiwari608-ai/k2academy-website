@@ -5,39 +5,42 @@ import logo from "../assets/logo.png";
 function Header() {
   const [open, setOpen] = useState(false);
 
-  const navItems = ["About Us", "Course", "Gallery", "Services", "Contact"];
+  const navItems = [
+    { name: "About Us", link: "#about-us" },
+    { name: "Course", link: "#course" },
+    { name: "Gallery", link: "#gallery" },
+    { name: "Services", link: "#services" },
+    { name: "Candidate Form", link: "#candidate-form" },
+    { name: "Contact", link: "#contact" },
+  ];
 
   return (
     <header className="header">
-      <div className="header-left">
+      <a href="#top" className="header-left">
         <img src={logo} alt="K2 Performing Art Logo" className="logo" />
         <div>
           <h1>Welcome To The K2 Performing Art</h1>
           <p>Academy of Performing Art</p>
         </div>
-      </div>
+      </a>
 
       <nav className="desktop-nav">
         {navItems.map((item) => (
-          <a key={item} href={`#${item.toLowerCase().replaceAll(" ", "-")}`}>
-            {item}
+          <a key={item.name} href={item.link}>
+            {item.name}
           </a>
         ))}
       </nav>
 
-      <button className="menu-btn" onClick={() => setOpen(!open)}>
+      <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Open menu">
         {open ? <X /> : <Menu />}
       </button>
 
       {open && (
         <nav className="mobile-nav">
           {navItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase().replaceAll(" ", "-")}`}
-              onClick={() => setOpen(false)}
-            >
-              {item}
+            <a key={item.name} href={item.link} onClick={() => setOpen(false)}>
+              {item.name}
             </a>
           ))}
         </nav>
