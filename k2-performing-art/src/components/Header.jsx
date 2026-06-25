@@ -19,8 +19,8 @@ function Header() {
       <a href="#top" className="header-left">
         <img src={logo} alt="K2 Performing Art Logo" className="logo" />
         <div>
-          <h1>Welcome To The K2 Performing Art</h1>
-          <p>Academy of Performing Art</p>
+          <h1>Welcome To The K2 Academy Of Performing Art</h1>
+          <p>Know Your Talent</p>
         </div>
       </a>
 

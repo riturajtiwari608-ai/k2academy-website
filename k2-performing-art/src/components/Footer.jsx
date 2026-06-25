@@ -1,7 +1,9 @@
 import { MessageCircle, MapPin, Phone } from "lucide-react";
 
 function Footer() {
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "91XXXXXXXXXX";
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
+  const academyAddress = import.meta.env.VITE_ACADEMY_ADDRESS;
+  const academyPhone = import.meta.env.VITE_ACADEMY_PHONE;
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     "Hello K2 Performing Art Academy, I want to know about admission."
@@ -28,25 +30,35 @@ function Footer() {
 
         <div>
           <h3>Contact</h3>
-          <p className="footer-contact">
-            <MapPin /> Add academy address here
-          </p>
-          <p className="footer-contact">
-            <Phone /> +91 XXXXX XXXXX
-          </p>
+          {academyAddress && (
+            <p className="footer-contact">
+              <MapPin /> {academyAddress}
+            </p>
+          )}
+          {academyPhone && (
+            <p className="footer-contact">
+              <Phone /> {academyPhone}
+            </p>
+          )}
         </div>
       </div>
 
       <div className="social-links">
-        <a href="#" aria-label="Instagram" className="social-text">
+        <a
+          href="https://www.instagram.com/k2academy/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit K2 Academy on Instagram"
+          className="social-text"
+        >
           IG
         </a>
 
-        <a href="#" aria-label="Facebook" className="social-text">
+        <a href="https://www.facebook.com/groups/1476389479332052" aria-label="Facebook" className="social-text">
           f
         </a>
 
-        <a href="#" aria-label="YouTube" className="social-text">
+        <a href="https://www.youtube.com/@k2academyofperformingarts432" aria-label="YouTube" className="social-text">
           ▶
         </a>
 

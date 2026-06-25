@@ -3,7 +3,8 @@ import { QrCode, Download, MessageCircle } from "lucide-react";
 
 function QRCodeSection() {
   const formUrl =
-    import.meta.env.VITE_FORM_URL || "http://localhost:5173/#candidate-form";
+    import.meta.env.VITE_FORM_URL ||
+    `${window.location.origin}${window.location.pathname}#candidate-form`;
 
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
 

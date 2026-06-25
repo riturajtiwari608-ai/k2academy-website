@@ -19,11 +19,11 @@ function CandidateForm() {
 
   const courses = [
     "Dance",
+    "Aerobics",
+    "Zumba",
+    "Yoga",
     "Karate",
-    "Performing Art",
-    "Fitness",
-    "Kids Batch",
-    "Weekend Batch",
+    "Skating",
   ];
 
   const handleChange = (e) => {
@@ -51,6 +51,12 @@ function CandidateForm() {
 
     if (!formData.full_name || !formData.phone || !formData.course) {
       setError("Please fill name, phone number and course.");
+      setLoading(false);
+      return;
+    }
+
+    if (!supabase) {
+      setError("Enquiries are temporarily unavailable. Please contact the academy on WhatsApp.");
       setLoading(false);
       return;
     }
