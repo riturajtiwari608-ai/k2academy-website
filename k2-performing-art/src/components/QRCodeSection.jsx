@@ -9,7 +9,7 @@ function QRCodeSection() {
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
 
   const whatsappMessage =
-    "Hello K2 Performing Art Academy, I want to know about admission and course details.";
+    "Hello K2 Academy Performing Art, I want to know about admission and course details.";
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage
@@ -56,7 +56,7 @@ function QRCodeSection() {
             />
           </div>
 
-          <h3>K2 Performing Art Academy</h3>
+          <h3>K2 Academy Performing Art</h3>
           <p>Scan this QR code for admission enquiry.</p>
 
           <button className="qr-download-btn" onClick={downloadQRCode}>

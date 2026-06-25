@@ -6,14 +6,14 @@ function Footer() {
   const academyPhone = import.meta.env.VITE_ACADEMY_PHONE;
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    "Hello K2 Performing Art Academy, I want to know about admission."
+    "Hello K2 Academy Performing Art, I want to know about admission."
   )}`;
 
   return (
     <footer className="footer">
       <div className="footer-grid">
         <div>
-          <h2>K2 Performing Art Academy</h2>
+          <h2>K2 Academy Performing Art</h2>
           <p>
             Building discipline, confidence, creativity and performance through
             dance, karate and performing arts.
@@ -73,7 +73,7 @@ function Footer() {
       </div>
 
       <p className="copyright">
-        © 2026 K2 Performing Art Academy. All Rights Reserved.
+        © 2026 K2 Academy Performing Art. All Rights Reserved.
       </p>
     </footer>
   );

@@ -11,9 +11,9 @@ function About() {
         viewport={{ once: true }}
       >
         <span className="section-tag">About Us</span>
-        <h2>K2 Performing Art Academy</h2>
+        <h2>K2 Academy Performing Art</h2>
         <p>
-          K2 Performing Art Academy is dedicated to building confidence,
+          K2 Academy Performing Art is dedicated to building confidence,
           discipline, creativity and physical strength through professional
           training in dance, karate and performing arts. We provide a positive
           learning environment where students can grow with passion, focus and
