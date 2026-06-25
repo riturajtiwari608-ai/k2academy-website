@@ -39,7 +39,7 @@ function ContactSection() {
             <Phone />
             <div>
               <h3>Phone / WhatsApp</h3>
-              <p>+91 XXXXX XXXXX</p>
+              <p>+91 98310 54763</p>
             </div>
           </div>
 
