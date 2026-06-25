@@ -49,7 +49,7 @@ function HeroSlider() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <span>K2 Academy Performing Art </span>
+                <span>K2 Academy Of Performing Art </span>
                 <h2>{slide.title}</h2>
                 <p>{slide.text}</p>
                 <a href="#course" className="hero-btn">

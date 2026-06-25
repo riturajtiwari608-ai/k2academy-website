@@ -5,7 +5,7 @@ function ContactSection() {
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "91XXXXXXXXXX";
 
   const message =
-    "Hello K2 Academy Performing Art, I want to know about admission and course details.";
+    "Hello K2 Academy Of Performing Art, I want to know about admission and course details.";
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     message
@@ -14,7 +14,7 @@ function ContactSection() {
   return (
     <section id="contact" className="section contact-section">
       <span className="section-tag">Contact Us</span>
-      <h2>Visit K2 Academy Performing Art</h2>
+      <h2>Visit K2 Academy Of Performing Art</h2>
       <p className="contact-subtitle">
         For admission, trial class, batch timing or fee details, contact us directly.
       </p>

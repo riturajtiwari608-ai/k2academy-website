@@ -36,7 +36,7 @@ function CandidateForm() {
   };
 
   const createWhatsAppMessage = () => {
-    return `Hello K2 Academy Performing Art ,%0A%0AI have submitted the enquiry form.%0A%0AName: ${formData.full_name}%0APhone: ${formData.phone}%0ACourse: ${formData.course}%0APurpose: ${formData.purpose}`;
+    return `Hello K2 Academy Of Performing Art ,%0A%0AI have submitted the enquiry form.%0A%0AName: ${formData.full_name}%0APhone: ${formData.phone}%0ACourse: ${formData.course}%0APurpose: ${formData.purpose}`;
   };
 
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
@@ -88,7 +88,7 @@ function CandidateForm() {
   return (
     <section id="candidate-form" className="section form-section">
       <span className="section-tag">Candidate Form</span>
-      <h2>Join K2 Academy Performing Art</h2>
+      <h2>Join K2 Academy Of Performing Art</h2>
       <p className="form-subtitle">
         Fill your details and our academy team will contact you soon.
       </p>

@@ -4,7 +4,7 @@ function FloatingWhatsApp() {
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
 
   const message =
-    "Hello K2 Academy Performing Art, I want to know about admission and course details.";
+    "Hello K2 Academy Of Performing Art, I want to know about admission and course details.";
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     message
